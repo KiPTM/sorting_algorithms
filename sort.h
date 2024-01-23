@@ -33,4 +33,13 @@ void insertion_sort_list(listint_t **list);
 /* Function to sort an array of integers using Selection sort */
 void selection_sort(int *arr, size_t size);
 
+/* Function to sort an array of integers using my_sort (Quick sort) */
+void my_sort(int *arr, size_t size);
+
+/* Recursive helper function for Quick Sort */
+void sort_recursive(int *arr, int low, int high, size_t size);
+
+/* Lomuto partition scheme for Quick Sort */
+int my_partition(int *arr, int low, int high, size_t size);
+
 #endif /* SORT_H */
