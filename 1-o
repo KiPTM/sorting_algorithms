@@ -1,0 +1,5 @@
+best case: O(n)
+average case: O(n^2)
+worst case: O(n^2)
+
+overal complexity: O(1)
