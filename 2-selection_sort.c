@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include "sort.h"
 
 /**
@@ -8,15 +9,15 @@
  */
 void selection_sort(int *arr, size_t size)
 {
-	size_t i, j, min_index;
-	int temp
-		
+	size_t i, j;
+	int temp;
+	
 	if (arr == NULL || size < 2)
         return;
 	
 	for (i = 0; i < size - 1; i++)
-    {
-        min_index = i;
+	{
+        size_t min_index = i;
 
         for (j = i + 1; j < size; j++)
         {
@@ -24,7 +25,7 @@ void selection_sort(int *arr, size_t size)
                 min_index = j;
         }
 
-        if (min_index != i)
+        if (i != min_index)
         {
             /* Swap elements */
             temp = arr[i];
@@ -34,6 +35,5 @@ void selection_sort(int *arr, size_t size)
             /* Print the array after each swap */
             print_array(arr, size);
         }
-    }
+	}
 }
-
