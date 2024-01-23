@@ -30,4 +30,7 @@ void print_list(const listint_t *list);
 /* Function to perform Insertion Sort on a doubly linked list */
 void insertion_sort_list(listint_t **list);
 
+/* Function to sort an array of integers using Selection sort */
+void selection_sort(int *arr, size_t size);
+
 #endif /* SORT_H */
