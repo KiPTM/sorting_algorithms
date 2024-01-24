@@ -24,6 +24,8 @@ typedef struct listint_s {
     struct listint_s *next;
 }
 
+struct listint_s;
+
 /* Function to print a doubly linked list */
 void print_list(const listint_t *list);
 
