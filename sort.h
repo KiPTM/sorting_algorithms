@@ -17,7 +17,14 @@ void bubble_sort(int *array, size_t size);
  */
 void print_array(const int *array, size_t size);
 
-/* Structure for a doubly linked list node */
+/**
+ * struct listint_s - Doubly linked list node
+ * @n: Integer value stored in the node
+ * @prev: Pointer to the previous node in the list
+ * @next: Pointer to the next node in the list
+ *
+ * Description: This structure represents a node in a doubly linked list.
+ */
 typedef struct listint_s {
     const int n;
     struct listint_s *prev;
