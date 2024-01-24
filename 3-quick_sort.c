@@ -6,7 +6,7 @@
  * @arr: The array to be sorted
  * @size: Size of the array
  */
-void my_sort(int *arr, size_t size)
+void quick_sort(int *arr, size_t size)
 {
 	if (arr == NULL || size < 2)
 		return;

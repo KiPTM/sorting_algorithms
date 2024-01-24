@@ -41,7 +41,7 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *arr, size_t size);
 
 /* Function to sort an array of integers using my_sort (Quick sort) */
-void my_sort(int *arr, size_t size);
+void quick_sort(int *arr, size_t size);
 
 /* Recursive helper function for Quick Sort */
 void sort_recursive(int *arr, int low, int high, size_t size);
